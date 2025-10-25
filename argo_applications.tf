@@ -30,13 +30,13 @@ resource "kubernetes_manifest" "best_rag_application" {
       project = argo-project
       sources = [
         {
-          repoURL        = https://github.com/Mangoliciouz/values-repo.git
+          repoURL        = "https://github.com/Mangoliciouz/values-repo.git"
           targetRevision = main
           ref            = "values"
         },
         {
           chart          = ""
-          repoURL        = https://github.com/Mangoliciouz/chart-repo.git
+          repoURL        = "https://github.com/Mangoliciouz/chart-repo.git"
           path           = "path/to/chart"
           targetRevision = main
           helm = {
@@ -102,13 +102,13 @@ resource "kubernetes_manifest" "best_rag_application" {
       project = argo-project
       sources = [
         {
-          repoURL        = https://github.com/Mangoliciouz/values-repo.git
+          repoURL        = "https://github.com/Mangoliciouz/values-repo.git"
           targetRevision = main
           ref            = "values"
         },
         {
           chart          = ""
-          repoURL        = https://github.com/Mangoliciouz/chart-repo.git
+          repoURL        = "https://github.com/Mangoliciouz/chart-repo.git"
           path           = "path/to/chart"
           targetRevision = main
           helm = {
